@@ -1,5 +1,5 @@
 import {ops} from "../../lib/";
-import {Apis} from "bitsharesjs-ws";
+import {Apis} from "dexstorejs-ws";
 
 import assert from "assert";
 var trans1 = {
@@ -108,7 +108,7 @@ describe("call_order_update serialization", function() {
     describe("same as backend", function() {
         before(function() {
             return Apis.instance(
-                "wss://eu.nodes.bitshares.ws",
+                "ws://163.172.142.178:8839",
                 true
             ).init_promise;
         });

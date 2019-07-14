@@ -686,9 +686,9 @@
                       "line": 8,
                       "column": 16
                     },
-                    "identifierName": "bitshares_ws"
+                    "identifierName": "dexstore_ws"
                   },
-                  "name": "bitshares_ws"
+                  "name": "dexstore_ws"
                 },
                 "value": {
                   "type": "CallExpression",
@@ -737,10 +737,10 @@
                         }
                       },
                       "extra": {
-                        "rawValue": "bitsharesjs-ws",
-                        "raw": "\"bitsharesjs-ws\""
+                        "rawValue": "dexstorejs-ws",
+                        "raw": "\"dexstorejs-ws\""
                       },
-                      "value": "bitsharesjs-ws"
+                      "value": "dexstorejs-ws"
                     }
                   ]
                 }
@@ -1982,7 +1982,7 @@
         "postfix": false,
         "binop": null
       },
-      "value": "bitshares_ws",
+      "value": "dexstore_ws",
       "start": 321,
       "end": 333,
       "loc": {
@@ -2086,7 +2086,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "bitsharesjs-ws",
+      "value": "dexstorejs-ws",
       "start": 343,
       "end": 359,
       "loc": {

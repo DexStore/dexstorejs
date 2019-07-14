@@ -504,10 +504,10 @@
             }
           },
           "extra": {
-            "rawValue": "bitsharesjs-ws",
-            "raw": "\"bitsharesjs-ws\""
+            "rawValue": "dexstorejs-ws",
+            "raw": "\"dexstorejs-ws\""
           },
-          "value": "bitsharesjs-ws"
+          "value": "dexstorejs-ws"
         }
       },
       {
@@ -8607,7 +8607,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "bitsharesjs-ws",
+      "value": "dexstorejs-ws",
       "start": 189,
       "end": 205,
       "loc": {

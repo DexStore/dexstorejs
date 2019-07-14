@@ -1,12 +1,12 @@
 import assert from "assert";
-import {Apis} from "bitsharesjs-ws";
+import {Apis} from "dexstorejs-ws";
 import {TransactionBuilder, ops, hash} from "../../lib";
 
 describe("TransactionBuilder", () => {
     // Connect once for all tests
     before(function() {
         return new Promise(function(resolve, reject) {
-            Apis.instance("wss://eu.nodes.bitshares.ws", true)
+            Apis.instance("ws://163.172.142.178:8839", true)
                 .init_promise.then(resolve)
                 .catch(reject);
         });

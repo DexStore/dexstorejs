@@ -1,4 +1,4 @@
-import {Apis} from "bitsharesjs-ws";
+import {Apis} from "dexstorejs-ws";
 import {
     TransactionBuilder,
     ChainStore,
@@ -10,7 +10,7 @@ import {
 const wifKey = "5Jmg51xtQckCpiSreThXBAs8vfrtKVJw57G5LaMDUUg2qQMwX1G";
 const pKey = PrivateKey.fromWif(wifKey);
 
-Apis.instance("wss://node.testnet.bitshares.eu", true).init_promise.then(
+Apis.instance("ws://163.172.142.178:8839", true).init_promise.then(
     res => {
         console.log("connected to:", res[0].network_name, "network");
 

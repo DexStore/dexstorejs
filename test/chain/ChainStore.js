@@ -1,5 +1,5 @@
 import assert from "assert";
-import {Apis, ChainConfig} from "bitsharesjs-ws";
+import {Apis, ChainConfig} from "dexstorejs-ws";
 import {ChainStore} from "../../lib";
 // var objs = require("./testObjects.json");
 
@@ -9,7 +9,7 @@ describe("ChainStore", () => {
     // Connect once for all tests
     before(function() {
         return Apis.instance(
-            "wss://eu.nodes.bitshares.ws",
+            "ws://163.172.142.178:8839",
             true
         ).init_promise.then(function(result) {
             coreAsset = result[0].network.core_asset;
@@ -180,7 +180,7 @@ describe("ChainStore", () => {
 //     before(function() {
 //         return new Promise(function(resolve) {
 //             return Apis.instance(
-//                 "wss://eu.nodes.bitshares.ws",
+//                 ws://163.172.142.178:8839",
 //                 true
 //             ).init_promise.then(function(result) {
 //                 coreAsset = result[0].network.core_asset;

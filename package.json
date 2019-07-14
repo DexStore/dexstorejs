@@ -1,7 +1,7 @@
 {
-    "name": "bitsharesjs",
+    "name": "dexstorejs",
     "version": "3.1.0",
-    "description": "Pure JavaScript BitShares library for node.js and browsers.",
+    "description": "Pure JavaScript DexStore library for node.js and browsers.",
     "browser": {
         "ws": false,
         "crypto": false
@@ -21,8 +21,8 @@
         "postbuild": "npm run browserify && npm run build-es && npm run webpack",
         "build:watch": "babel lib -d dist --watch",
         "prebrowserify": "mkdirp build",
-        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone bitshares_js -o build/bitsharesjs.js -d",
-        "postbrowserify": "cross-env NODE_ENV=production minify build/bitsharesjs.js --mangle --outFile build/bitsharesjs.min.js",
+        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone dexstore_js -o build/dexstorejs.js -d",
+        "postbrowserify": "cross-env NODE_ENV=production minify build/dexstorejs.js --mangle --outFile build/dexstorejs.min.js",
         "precommit": "pretty-quick --staged && npm run test",
         "prepublish": "npm run build && npm run test",
         "doc": "esdoc -c esdoc.json",
@@ -37,9 +37,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bitshares/bitsharesjs.git"
+        "url": "git+https://github.com/DexStore/dexstorejs.git"
     },
-    "author": "BitShares UI Team <ui-dev@bitshares.org>",
+    "author": "DexStore UI Team <ui-dev@dexstore.org>",
     "contributors": [
         "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
         "James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)",
@@ -48,7 +48,7 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/bitshares/bitsharesjs/issues"
+        "url": "https://github.com/DexStore/dexstorejs/issues"
     },
     "engines": {
         "node": ">= 6.0.0"
@@ -57,7 +57,7 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "1.4.2",
-        "bitsharesjs-ws": "3.1.0-rc1",
+        "dexstorejs-ws": "3.1.0-rc1",
         "bs58": "4.0.1",
         "bytebuffer": "5.0.1",
         "create-hash": "1.2.0",
