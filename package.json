@@ -57,7 +57,7 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "1.4.2",
-        "dexstorejs-ws": "3.1.0-rc1",
+        "dexstorejs-ws": "git+https://github.com/DexStore/dexstorejs-ws.git",
         "bs58": "4.0.1",
         "bytebuffer": "5.0.1",
         "create-hash": "1.2.0",
